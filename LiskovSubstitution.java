@@ -26,3 +26,7 @@ public class Dolphin extends Amphibian{
    }
     
 }
+
+public class Fish{
+    public void swim();
+}
