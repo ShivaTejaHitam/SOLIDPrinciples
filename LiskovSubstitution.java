@@ -1,18 +1,28 @@
+public class Amphibian {
 
-class Polygon{
-  public int findArea(int dimension){
-    // some logic to find area
-  }
+    public void swim();
+    public void walk();
+
 }
 
-class Square extends Polygon{
-  public int findArea(int dimension){
-    return dimension * dimension;
-  }
+public class Frog extends Amphibian {
+    public void swim() {
+        System.out.println("The frog is swimming");
+    }
+    
+    public void walk() {
+        System.out.println("The frog is walking on land");
+    }
 }
 
-class WrongSquare extends Polygon{
-  public int findArea(int dimension){
-    return dimension;
-  }
+public class Dolphin extends Amphibian{
+   public void swim() {
+        System.out.println("The dolphin is swimming");
+   }
+   
+   @override
+   public void walk() {
+     // unintended behviour
+   }
+    
 }
