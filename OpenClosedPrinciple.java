@@ -8,18 +8,11 @@ class Phone{
 
 class SmartPhone extends Phone{
   
-  @override
-  public void makeCall(){
-    // with conference call feature
-  }
   
   public void videoCall(){
     // make a video call
   }
   
-  @override
-  public void sendMessage(){
-    // send emoji
-  }
+ 
     
 }
