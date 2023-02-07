@@ -22,7 +22,6 @@ public class Dolphin extends Amphibian{
    
    @Override
    public void walk() {
-     // unintended behviour
    }
     
 }
