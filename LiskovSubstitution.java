@@ -20,7 +20,7 @@ public class Dolphin extends Amphibian{
         System.out.println("The dolphin is swimming");
    }
    
-   @override
+   @Override
    public void walk() {
      // unintended behviour
    }
