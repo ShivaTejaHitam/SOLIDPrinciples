@@ -1,10 +1,25 @@
-public interface Teacher {
+public interface JavaTeacher {
 
     void teachJava();
 
+}
+
+public interface DBMSTeacher {
+
+
     void teachDBMS();
 
+}
+
+public interface OSTeacher {
+
+
     void teachOS();
+    
+
+}
+
+public interface CNTeacher {
     
     void teachCN();
 
@@ -12,7 +27,7 @@ public interface Teacher {
 
 
 
-class John implements Teacher{
+class John implements JavaTeacher{
   
   @Override 
   void teachJava(){
@@ -20,21 +35,21 @@ class John implements Teacher{
   }
 }
 
-class Daniel implements Teacher{
+class Daniel implements DBMSTeacher{
   @Override
   void teachDBMS(){
         System.out.println("Teaching DBMS");
   }
 }
 
-class Alex implements Teacher{
+class Alex implements OSTeacher{
   @Override
   void teachOS(){
         System.out.println("Teaching OS");
   }
 }
 
-class Joe implements Teacher{
+class Joe implements CNTeacher{
   @Override
   void teachCN(){
         System.out.println("Teaching CN");
