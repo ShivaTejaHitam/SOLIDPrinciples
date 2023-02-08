@@ -17,13 +17,15 @@ class Computer{
 
 class AcerKeyboard implements Keyboard{
 }
+class SamsungKeyboard implements Keyboard{
+}
 
 class DellMouse implements Mouse{
 }
 
 
 class Main{
-  Keyboard keyboard = new AcerKeyboard();
+  Keyboard keyboard = new SamsungKeyboard();
   Mouse mouse = new DellMouse();
   Computer  computer  = new Computer(keyboard,mouse);
 }
