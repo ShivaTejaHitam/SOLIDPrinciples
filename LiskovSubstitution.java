@@ -1,4 +1,4 @@
-public class Amphibian {
+abstract class Amphibian {
 
     public void swim();
     public void walk();
@@ -15,17 +15,13 @@ public class Frog extends Amphibian {
     }
 }
 
-public class Dolphin extends Amphibian{
+public class Dolphin extends Fish{
    public void swim() {
         System.out.println("The dolphin is swimming");
-   }
-   
-   @Override
-   public void walk() {
    }
     
 }
 
-public class Fish{
+abstract class Fish{
     public void swim();
 }
