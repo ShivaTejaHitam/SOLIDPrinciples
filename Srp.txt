@@ -1,0 +1,2 @@
+we should be able to describe the class in single line
+class should have single responsibility
