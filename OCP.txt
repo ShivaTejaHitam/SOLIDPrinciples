@@ -1,0 +1,5 @@
+Software entities should be open for extension and closed for modification.
+What [the OCP] means is that you should strive to get your code into a position such that,
+  when behavior changes in expected ways, you don't have to make sweeping changes to all the modules of the system. 
+  Ideally, you will be able to add the new behavior by adding new code and changing little or no old code.”
+  
