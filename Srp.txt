@@ -1,2 +1,25 @@
 we should be able to describe the class in single line
+
 class should have single responsibility
+
+if you are using words like but , if , and the class may have multiple responsibilities
+
+check to see if a design violates the SRP by reviewing the cohesion between methods and fields within a class. Classes that adhere to the SRP tend to have high cohesion. If there are fields which are used by subset of methods, then those subset of methods can be splitted in to separate class.But it may not be possible practically everytime. 
+
+Why is mixing responsibilities bad?
+
+The "Order" example demonstrates the negative impact of mixing responsibilities. It has functions from all four function families. For example, review the "Stock" responsibility. The class "Order" depends on other classes with low-level "Stock management" functions, or some "Stock API" functions. The same is true for other responsibilities: Four different responsibilities in the “Order” class make it sensitive to changes in too many other classes. Moreover, some classes depend on "Order" and they too will be sensitive to changes in low-level functionality.
+
+Mixing of responsibilities tends to accumulate. Developers start to mix functionality between responsibilities because they are in the same module.
+
+In the example, the “Order” class has some function families of “Accounting” responsibility and "Reporting" responsibility.
+
+Suppose both of them need some similar function: for instance, some total (or subtotal) calculation.
+
+As the "Order" is one class, developers will call Reporting "getTotal" from Accounting and responsibility.
+
+Now assume that "Reporting" users requested some change of their functionality, which requires changing the "getTotal" function. As a result, "Accounting" functionality will also be changed (or even broken), even though the "Accounting" users didn't request any changes.
+
+The colocation of responsibilities couples the actors and makes the system fragile: A system that can break in unpredictable places when it is changed.
+
+It is therefore recommended to minimize the number of responsibilities of one class.
