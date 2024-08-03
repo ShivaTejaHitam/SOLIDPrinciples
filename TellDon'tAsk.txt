@@ -1,0 +1,6 @@
+look at data exposure to identify violation of telldon't ask principle
+causes maintainence complexity, forcing the refactoring of different classes whenever change is made in one class. 
+violates srp and decreases cohesion.
+
+one more way to identify is Anemic Domain Model. It is an entity that is open to provide its state to callers instead 
+of performing the operation on itself.
