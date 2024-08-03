@@ -9,3 +9,5 @@ never combine ds and objects. Keep away from hybrids
 
 comparing ds and objects: 
 https://ibb.co/9r71yYf
+
+be careful with getters and setters. Expose the data in most abstract form as possible
