@@ -4,3 +4,8 @@ https://ibb.co/Kqz5WWb
 Procedural programming
 https://ibb.co/p09g08B
 https://ibb.co/s3tQ1Qz
+
+never combine ds and objects. Keep away from hybrids
+
+comparing ds and objects: 
+https://ibb.co/9r71yYf
